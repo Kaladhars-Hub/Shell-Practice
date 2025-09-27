@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # No space after or before equal
-PERSON1=Modi
-PERSON2=Meloni
+PERSON1=Man
+PERSON2=Woman
 
 echo "$PERSON1:: Hi $PERSON2, How are you?"
 echo "$PERSON2:: Hello $PERSON1, I am good. How are you?"
