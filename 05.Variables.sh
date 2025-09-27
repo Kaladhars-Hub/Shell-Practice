@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # No space after or before equal
-PERSON1=Trump
-PERSON2=Putin
+PERSON1=$1
+PERSON2=$2
 
 echo "$PERSON1:: Welcome to Alaska, Mr. $PERSON2! How was your journey?"
 echo "$PERSON2:: Thank you, Mr. $PERSON1. The flight was long but comfortable. Alaska is beautiful."
