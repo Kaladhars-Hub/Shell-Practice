@@ -25,4 +25,3 @@ elif [ $score -ge 70 ]; then
 else
     echo "Grade: F"
 fi
-
