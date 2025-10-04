@@ -12,3 +12,4 @@ echo "I live in $city"
 
 # Another way to use variables
 echo "Hello, ${name}!" #Curly braces for clarity
+
