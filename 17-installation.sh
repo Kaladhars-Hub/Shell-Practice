@@ -7,12 +7,15 @@ if [ "$USERID" -ne 0 ]; then
     exit 1
 fi
 
-VALIDATE(){ #functions receive inputs through args just like shell script args
-     if [ "$?" -ne 0 ]; then
-    echo "ERROR:: Installing Mysql is failure"
+VALIDATE(){ #VALIDATE $? "Mysql" passes two arguments to the function
+            #$1 = exit code $?
+            #$2 = package name (mysql/nginix/mongodb)etc..
+            #The function then uses these parameters to show appropriate messages
+     if [ $1 -ne 0 ]; then
+    echo "ERROR:: Installing $2 is failure"
     exit 1
     else
-    echo "Installing Mysql is SUCCESS"
+    echo "Installing $2 is SUCCESS"
     fi
 }
 
@@ -24,5 +27,6 @@ VALIDATE $? "nginx"
 
 dnf install python3 -y
 VALIDATE $? "python3"
+
 
 
