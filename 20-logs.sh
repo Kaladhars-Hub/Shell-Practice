@@ -31,7 +31,7 @@ VALIDATE(){ #VALIDATE $? "Mysql" passes two arguments to the function
 
 dnf list installed mysql &>>$LOG_FILE
 # Install if it is not found
-if [$? -ne 0 ]; then
+if [ $? -ne 0 ]; then
     dnf install mysql -y &>>$LOG_FILE
 VALIDATE $? "Mysql"
 else
@@ -39,7 +39,7 @@ else
 fi    
 
 dnf list installed nginx &>>$LOG_FILE
-if [$? -ne 0 ]; then
+if [ $? -ne 0 ]; then
     dnf install nginx -y &>>$LOG_FILE
 VALIDATE $? "nginx"
 else
@@ -47,10 +47,11 @@ else
 fi    
 
 dnf list installed python3 &>>$LOG_FILE
-if [$? -ne 0 ]; then
+if [ $? -ne 0 ]; then
     dnf install python3 -y &>>$LOG_FILE
 VALIDATE $? "python3"
 else
     echo -e "python3 already exist ... $Y SKIPPING $N"
 fi
+
 
