@@ -8,7 +8,7 @@ N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$(basename "$0" | cut -d "." -f1)
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" #This means /var/log/shell-script/20-logs.log
 
 mkdir -p "$LOGS_FOLDER"
 echo "Script started at: $(date)" | tee -a "$LOG_FILE"
