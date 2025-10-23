@@ -29,4 +29,4 @@ echo "you are $age years old"
 
 #Example
 current_date=$(date +%Y-%m-%d)
-echo "Today is current_date"
+echo "Today is $current_date"
