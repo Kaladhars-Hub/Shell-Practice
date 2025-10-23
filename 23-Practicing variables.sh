@@ -35,3 +35,18 @@ esac
 
 # Display result
 echo "Result: $num1 $operation $num2 = $result"
+
+
+#Key Concepts to Practice:
+
+#Variable assignment: variable=value
+
+#Variable referencing: $variable or ${variable}
+
+#Command substitution: variable=$(command)
+
+#Arithmetic operations: $((expression))
+
+#String manipulation: ${variable#pattern}, ${variable%pattern}
+
+#Arrays: array=(element1 element2)
