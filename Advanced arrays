@@ -3,4 +3,4 @@
 files=("report.txt" "data.csv" "notes.md")
 
 #Access items (indexing starts at 0)
-echo "first file is ${file[0]}" #Prints report.txt
+echo "First file is ${files[0]}" #Prints report.txt
