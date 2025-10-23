@@ -28,8 +28,5 @@ echo "you are $age years old"
 #Command Substitution:Storing the o/p of a command in a variable.Use $(...).
 
 #Example
-current_date=$(date +% Y-% m-%d)
+current_date=$(date +%Y-%m-%d)
 echo "Today is current_date"
-
-
-
