@@ -26,3 +26,10 @@ full_path="$documents_dir/$filename"
 echo "Home directory: $home_dir"
 echo "Documents directory: $documents_dir"
 echo "File to process: $full_path"
+
+# Create backup directory if it doesn't exist
+mkdir -p "$backup_dir"
+
+# Copy file using variables
+cp "$full_path" "$backup_dir/${filename%.txt}_backup.txt"
+echo "Backup created in: $backup_dir"
