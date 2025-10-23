@@ -36,3 +36,4 @@ echo "Sample report data" > "$full_path"
 # Now the copy will work
 cp "$full_path" "$backup_dir/${filename%.txt}_backup.txt"
 echo "Backup successfully created in: $backup_dir"
+
