@@ -36,3 +36,5 @@ cat "$documents_dir/report.txt"
 
 echo "--- Backup file content ---" 
 cat "$backup_dir/$backup_filename"
+
+
