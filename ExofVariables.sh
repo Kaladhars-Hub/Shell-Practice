@@ -27,9 +27,12 @@ echo "Home directory: $home_dir"
 echo "Documents directory: $documents_dir"
 echo "File to process: $full_path"
 
-# Create backup directory if it doesn't exist
-mkdir -p "$backup_dir"
+# Create necessary directories
+mkdir -p "$documents_dir" "$backup_dir"
 
-# Copy file using variables
+# Create sample file
+echo "Sample report data" > "$full_path"
+
+# Now the copy will work
 cp "$full_path" "$backup_dir/${filename%.txt}_backup.txt"
-echo "Backup created in: $backup_dir"
+echo "Backup successfully created in: $backup_dir"
