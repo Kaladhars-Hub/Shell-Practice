@@ -7,3 +7,13 @@ while [ $count -le 3 ]; do
     echo "Count: $count"
     count=$((count + 1))
 done
+
+#!/bin/bash
+
+# Simple password check
+password=""
+while [ "$password" != "hello" ]; do
+    echo "Enter password:"
+    read password
+done
+echo "Access granted!"
