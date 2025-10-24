@@ -8,4 +8,4 @@ echo $? #Prints Non Zero number
 
 #WE use this to control your script.the IF statement actually just checks the exit status.
 
-if [[ -f "/etc/hosts"]] ; then ... fi
+if [[ -f "/etc/hosts" ]]; then ... fi
