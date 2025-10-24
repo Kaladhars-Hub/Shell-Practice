@@ -10,16 +10,6 @@ done
 
 #!/bin/bash
 
-# Simple password check
-password=""
-while [ "$password" != "hello" ]; do
-    echo "Enter password:"
-    read password #
-done
-echo "Access granted!"
-
-#!/bin/bash
-
 # Keep asking until user says yes
 answer=""
 while [ "$answer" != "yes" ]; do
