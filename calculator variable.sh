@@ -50,3 +50,5 @@ echo "Result: $num1 $operation $num2 = $result"
 #String manipulation: ${variable#pattern}, ${variable%pattern}
 
 #Arrays: array=(element1 element2)
+
+#if you wanted to do math you have to hand to it a calculator in the format of $((...))
