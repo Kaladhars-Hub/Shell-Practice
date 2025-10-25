@@ -38,13 +38,11 @@ done < "/etc/hosts"
 echo "=== WRONG way (changes the text) ==="
 while read name; do
     echo "Name: '$name'"
-    touch name.txt
 done < names.txt
 
 echo "=== RIGHT way (keeps text exact) ==="
 while IFS= read -r name; do
     echo "Name: '$name'"
-    touch name.txt
 done < names.txt
 
 #Simple Rule:
