@@ -16,5 +16,5 @@ greet () {
     echo "Hello, $name"
 }
 
-greet  "Barbie"
-greet  "Harvey"
+greet "Barbie"
+greet "Harvey"
