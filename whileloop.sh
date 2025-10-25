@@ -33,3 +33,38 @@ echo "Great! Let's go!"
 while IFS= read -r line; do
   echo "Read line: $line"
 done < "/etc/hosts"
+
+# Same file, different reading methods
+echo "=== WRONG way (changes the text) ==="
+while read name; do
+    echo "Name: '$name'"
+    touch name.txt
+done < names.txt
+
+echo "=== RIGHT way (keeps text exact) ==="
+while IFS= read -r name; do
+    echo "Name: '$name'"
+    touch name.txt
+done < names.txt
+
+#Simple Rule:
+#Always use while IFS= read -r line when reading files - it keeps the text exactly as it appears in the file!
+
+# Even Simpler:
+# read = "Read a line"
+
+# The -r means: "If you see a backslash \, just keep it as a normal character"
+
+#Example:
+
+# File has: C:\Users\Name
+
+# Without -r: Might try to interpret \U and \N as special codes
+
+# With -r: Keeps it as C:\Users\Name
+
+
+# IFS= = "Keep spaces where they are" or IFS= means: "Don't trim spaces from the beginning or end of lines"
+
+# So: "Read each line exactly as written, don't change anything!"
+
