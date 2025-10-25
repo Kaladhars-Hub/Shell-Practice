@@ -29,6 +29,7 @@ done
 echo "Great! Let's go!"
 
 #Advanced (Reading a file line-by-line): This is a super common and powerful pattern.
+
 while IFS= read -r line; do
   echo "Read line: $line"
-done < "input.txt"
+done < "/etc/hosts"
