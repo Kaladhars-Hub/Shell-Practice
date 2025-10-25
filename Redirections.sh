@@ -33,3 +33,9 @@ ls /existing_file /nonexistent_file 2>&1 | grep "file"
 # Errors show on screen, output goes to file
 ls /existing_file /nonexistent_file > output.txt
 # Error message: "ls: /nonexistent_file: No such file or directory" shows on screen
+
+#WITH 2>&1:
+
+# Both output AND errors go to file (nothing on screen)
+ls /existing_file /nonexistent_file > output.txt 2>&1
+# Everything is silent - all in output.txt
