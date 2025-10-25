@@ -12,9 +12,10 @@ greet
 
 greet () {
     local person_type=$1
-    local name=$2
+    local name=$2 $3
     echo "Hello, $name"
 }
 
 greet "person" "Barbie"
 greet "person" "Harvey"
+greet "person" "Superman"
