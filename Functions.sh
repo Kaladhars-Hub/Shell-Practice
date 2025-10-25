@@ -11,5 +11,5 @@ greet () {
     local name=$1
     echo "Hello,world"
 }
-greet person "Barbie"
-greet person "Harvey"
+greet "Barbie"
+greet "Harvey"
