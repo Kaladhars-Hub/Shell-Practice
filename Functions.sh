@@ -1,5 +1,11 @@
 #!/bin/bash
 
+greet () {
+    echo "Hello,world!"
+}
+greet
+greet
+
 #Advanced Example
 
 greet () {
