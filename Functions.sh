@@ -3,8 +3,10 @@
 #Advanced Example
 
 greet () {
-    local name=$1
-    echo "Hello,world"
+    local person_type=$1
+    local name=$2
+    echo "Hello, $name"
 }
-greet "Barbie"
-greet "Harvey"
+
+greet "person" "Barbie"
+greet "person" "Harvey"
