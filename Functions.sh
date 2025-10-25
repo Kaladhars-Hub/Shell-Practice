@@ -4,4 +4,3 @@ greet () {
     echo "Hello,world"
 }
 greet
-greet
