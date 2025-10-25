@@ -24,18 +24,24 @@ greet "person" "Superman"
 
 #Output
 
-Hello, Barbie
-Hello, Harvey
-Hello, Superman
+# Hello, Barbie
+# Hello, Harvey
+# Hello, Superman
 
 #Example:
 
 greet () {
     # Skip the first argument "person" and use all others
     shift
-    echo "Hello, $@"
+    echo "Hello, $@" #@ means to use all arguments
 }
 
 greet "person" "Barbie"
 greet "person" "Harvey"
 greet "person" "Superman"
+
+#Output
+
+# Hello, Barbie
+# Hello, Harvey
+# Hello, Superman
