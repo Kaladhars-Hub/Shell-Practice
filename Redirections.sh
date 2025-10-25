@@ -1,4 +1,4 @@
 #!/bin/bash
 
 #Example:
-ls/ > root_files.txt
+ls / > root_files.txt
