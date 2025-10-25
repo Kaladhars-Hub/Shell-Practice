@@ -22,3 +22,6 @@ command 2>&1
 
 # Both normal output and errors go to the same file
 command > output.txt 2>&1
+
+# Errors and normal output both show on screen
+ls /existing_file /nonexistent_file 2>&1
