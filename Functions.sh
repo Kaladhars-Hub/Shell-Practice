@@ -11,10 +11,10 @@ greet
 #Advanced Example
 
 greet () {
-    local name=$1
+    local =$1
     local name=$2
     echo "Hello, $name"
 }
 
-greet "Barbie"
-greet "Harvey"
+greet "person" "Barbie"
+greet "person" "Harvey"
