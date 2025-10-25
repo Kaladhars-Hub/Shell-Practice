@@ -28,3 +28,8 @@ ls /existing_file /nonexistent_file 2>&1
 
 # Both normal output and errors go to grep
 ls /existing_file /nonexistent_file 2>&1 | grep "file"
+
+#WITHOUT 2>&1:
+# Errors show on screen, output goes to file
+ls /existing_file /nonexistent_file > output.txt
+# Error message: "ls: /nonexistent_file: No such file or directory" shows on screen
