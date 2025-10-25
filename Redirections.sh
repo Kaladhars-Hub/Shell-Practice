@@ -19,3 +19,6 @@ cat error_output.txt #To check the ouput files of error
 
 # Redirect stderr (2) to stdout (1)
 command 2>&1
+
+# Both normal output and errors go to the same file
+command > output.txt 2>&1
