@@ -14,3 +14,8 @@ ls /file_that_does_not_exist 2> error_output.txt
 cat /another_fake_file 2>> error_output.txt
 
 echo "Check the hidden errors:"
+
+cat error_output.txt #To check the ouput files of error
+
+# Redirect stderr (2) to stdout (1)
+command 2>&1
