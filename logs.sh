@@ -17,5 +17,5 @@ log "INFO:Script started."
 
 # ...do work...
 
-log"WARN:Low disk space"
-log"INFO:Script finished."
+log "WARN:Low disk space"
+log "INFO:Script finished."
