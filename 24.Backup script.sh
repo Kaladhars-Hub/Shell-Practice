@@ -23,7 +23,7 @@ if [ "$USERID" -ne 0 ]; then
 fi
 
 USAGE(){
-    echo -e "$R USAGE:: sudo sh 24.Backup script.sh <SOURCE_DIR> <DEST_DIR> <DAYS> $N"
+    echo -e "$R USAGE:: sudo bash $0 <SOURCE_DIR> <DEST_DIR> <DAYS> $N"
     exit 1
 }
 
