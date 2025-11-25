@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#Example 3:Calculator with user i/p
+
+# Get user input
+echo "Enter first number:"
+read num1
+echo "Enter second number:"
+read num2
+echo "Enter operation (+, -, *, /):"
+read operation
+
+# Perform calculation
+case $operation in
+    "+")
+        result=$((num1 + num2))
+        ;;
+    "-")
+        result=$((num1 - num2))
+        ;;
+    "*")
+        result=$((num1 * num2))
+        ;;
+    "/")
+        if [ $num2 -ne 0 ]; then
+            result=$((num1 / num2))
+        else
+            result="Error: Division by zero"
+        fi
+        ;;
+    *)
+        result="Invalid operation"
+        ;;
+esac
+
+# Display result
+echo "Result: $num1 $operation $num2 = $result"
+
+
+#Key Concepts to Practice:
+
+#Variable assignment: variable=value
+
+#Variable referencing: $variable or ${variable}
+
+#Command substitution: variable=$(command)
+
+#Arithmetic operations: $((expression))
+
+#String manipulation: ${variable#pattern}, ${variable%pattern}
+
+#Arrays: array=(element1 element2)
+
+#if you wanted to do math you have to hand to it a calculator in the format of $((...))
