@@ -13,7 +13,7 @@ while IFS= read -r line; do
     # Check threshold
     if [ "$USAGE" -ge $DISK_THRESHOLD ]; then
         # Send email alert (Fixed the quotes here)
-        MESSAGE="High Usage on: $PARTITION Usage: $USAGE %"
+        MESSAGE+="High Usage on: $PARTITION Usage: $USAGE %"
     fi
 done <<< "$DISK_USAGE"
 
