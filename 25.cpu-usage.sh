@@ -1,9 +1,9 @@
 #!/bin/bash
 
 DISK_USAGE=$(df -hT | grep -v Filesystem)
-DISK_THRESHOLD=2 #in projects we keep it around 80
+DISK_THRESHOLD=2 # Keeping it low for testing
 
-# Loop each line
+# Loop through each line
 while IFS= read -r line; do
     # Extract partition and usage
     PARTITION=$(echo "$line" | awk '{print $1}')
@@ -11,7 +11,7 @@ while IFS= read -r line; do
     
     # Check threshold
     if [ "$USAGE" -ge $DISK_THRESHOLD ]; then
-        # Send email alert
-        echo "High Usage on "$PARTITION" "$USAGE"
+        # Send email alert (Fixed the quotes here)
+        echo "High Usage on: $PARTITION Usage: $USAGE%"
     fi
-done <<< $DISK_USAGE
+done <<< "$DISK_USAGE"
